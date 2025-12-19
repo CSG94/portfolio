@@ -245,6 +245,15 @@ section {
       border-top: 1px solid rgba(148, 163, 184, 0.2);
     }
 
+    .content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  min-height: 60vh;
+  overflow-y: auto;
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column-reverse;
