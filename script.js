@@ -23,3 +23,17 @@ links.forEach(link => {
 
 // Cargar página inicial
 loadPage("contenido/todo.html");
+
+// Función para copiar email al portapapeles
+
+function copiarEmail() {
+    const email = "granadossanchezcristina@gmail.com";
+
+    navigator.clipboard.writeText(email)
+    .then(() => {
+        alert("Email copiado al portapapeles ✔");
+    })
+    .catch(() => {
+        alert("No se pudo copiar el email");
+    });
+}
